@@ -6,5 +6,5 @@ if (strumDetector()[stringNum])
 	stringActive = true;
 	alarm[0] = falloffTime;
 	
-	audio_play_sound(snd_ukeleleC, 1, 0, 3, 0, 1.25);
+	audio_play_sound(chordToNote(stringNum, chordDetector()[stringNum]), 1, 0, 3);
 }

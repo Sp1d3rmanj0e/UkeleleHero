@@ -3,7 +3,7 @@
 
 var _stringsStrummed = strumDetector();
 
-draw_text(10, 10, keyboard_lastkey);
+draw_text(10, 10, keyboard_string);
 
 for (var i = 0; i < 4; i++)
 {

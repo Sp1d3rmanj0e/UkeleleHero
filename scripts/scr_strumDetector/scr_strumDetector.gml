@@ -17,10 +17,10 @@ function strumDetector(){
 	
 	var str1, str2, str3, str4;
 	
-	str1 = keyboard_check_pressed(vk_rshift);
-	str2 = keyboard_check_pressed(vk_enter);
-	str3 = keyboard_check_pressed(220);
-	str4 = keyboard_check_pressed(vk_backspace);
+	str1 = keyboard_check_pressed(vk_numpad2) || keyboard_check_pressed(vk_numpad3);
+	str2 = keyboard_check_pressed(vk_numpad5) || keyboard_check_pressed(vk_numpad6);
+	str3 = keyboard_check_pressed(vk_numpad8) || keyboard_check_pressed(vk_numpad9);
+	str4 = keyboard_check_pressed(106) || keyboard_check_pressed(109) || keyboard_check_pressed(111);
 	
 	return [str1, str2, str3, str4];
 }
